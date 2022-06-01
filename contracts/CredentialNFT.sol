@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@opengsn/contracts/src/BaseRelayRecipient.sol";
+import "../contract-libs/ERC721URIStorage.sol";
+import "../contract-libs/Counters.sol";
+import "../contract-libs/Ownable.sol";
+import "../contract-libs/BaseRelayRecipient.sol";
 
 contract CrednetialNFT is ERC721URIStorage, Ownable, BaseRelayRecipient {
     using Counters for Counters.Counter;
